@@ -4,7 +4,11 @@ Rails.application.routes.draw do
    namespace :api do
     namespace :v1 do      
       resources :users
+      resources :notes
+      resources :tags
       post 'authenticate', to: 'authentication#create'
+      get 'usernotes', to: 'notes#get_user_notes'
+      get 'daytone', to: 'users#get_tone_of_day'
     end
   end
 end

@@ -9,7 +9,6 @@ class API::V1::BaseController < ActionController::API
     ENV['SECRET']
   end
 
-
 protected
 
   def authenticate_request!

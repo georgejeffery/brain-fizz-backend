@@ -1,0 +1,90 @@
+Running via Spring preloader in process 13280
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `reminder' for User (call 'User.connection' to establish a connection):Class
+Running via Spring preloader in process 14185
+Running via Spring preloader in process 14571
+Running via Spring preloader in process 16106
+Running via Spring preloader in process 24811
+Running via Spring preloader in process 27128
+Running via Spring preloader in process 30590
+Running via Spring preloader in process 5622
+Running via Spring preloader in process 18304
+Running via Spring preloader in process 25259
+Running via Spring preloader in process 28308
+Running via Spring preloader in process 33416
+/Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/twilio-ruby-5.21.1/lib/twilio-ruby/framework/version.rb:150:in `create': [HTTP 400] 21608 : Unable to create record (Twilio::REST::RestError)
+The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.
+https://www.twilio.com/docs/errors/21608
+
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/twilio-ruby-5.21.1/lib/twilio-ruby/rest/api/v2010/account/message.rb:119:in `create'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/app/models/user.rb:58:in `reminder'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/app/models/user.rb:69:in `block in all_reminders'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/relation/delegation.rb:71:in `each'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/relation/delegation.rb:71:in `each'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/app/models/user.rb:68:in `all_reminders'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/command/base.rb:65:in `perform'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/command.rb:46:in `invoke'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands.rb:18:in `<main>'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/loaded_features_index.rb:83:in `register'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:291:in `block in require'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:291:in `require'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/bin/rails:9:in `<main>'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:285:in `block in load'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:285:in `load'
+	from /Users/flatironschool/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/flatironschool/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 34959
+/Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/twilio-ruby-5.21.1/lib/twilio-ruby/framework/version.rb:150:in `create': [HTTP 400] 21608 : Unable to create record (Twilio::REST::RestError)
+The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.
+https://www.twilio.com/docs/errors/21608
+
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/twilio-ruby-5.21.1/lib/twilio-ruby/rest/api/v2010/account/message.rb:119:in `create'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/app/models/user.rb:58:in `reminder'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/app/models/user.rb:69:in `block in all_reminders'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/relation/delegation.rb:71:in `each'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/relation/delegation.rb:71:in `each'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/app/models/user.rb:68:in `all_reminders'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/command/base.rb:65:in `perform'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/command.rb:46:in `invoke'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/commands.rb:18:in `<main>'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/loaded_features_index.rb:83:in `register'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:291:in `block in require'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:291:in `require'
+	from /Users/flatironschool/personalwork/brain-fizz-backend/bin/rails:9:in `<main>'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/bootsnap-1.4.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:285:in `block in load'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:257:in `load_dependency'
+	from /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activesupport-5.2.2/lib/active_support/dependencies.rb:285:in `load'
+	from /Users/flatironschool/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/flatironschool/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 73424

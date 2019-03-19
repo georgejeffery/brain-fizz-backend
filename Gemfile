@@ -40,6 +40,16 @@ gem'rb-readline'
 
 gem 'ibm_watson'
 gem 'twilio-ruby'
+# Use delayed job for running background jobs
+gem 'delayed_job_active_record'
+
+# Need daemons to start delayed_job
+gem 'daemons'
+
+gem 'whenever', require: false
+
+
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

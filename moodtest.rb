@@ -16,7 +16,7 @@ tone = tone_analyzer.tone(
   sentences: false
 )
 
-testoutput =  JSON.pretty_generate(tone.result)
+testoutput =  tone.result
 
-puts testoutput
+puts testoutput["document_tone"]["tones"]
 
