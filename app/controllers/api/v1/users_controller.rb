@@ -1,6 +1,7 @@
 class Api::V1::UsersController < API::V1::BaseController
   
   before_action :authenticate_request!, only: [:show]
+
   
   def index
     users = User.all
@@ -19,7 +20,7 @@ class Api::V1::UsersController < API::V1::BaseController
     if @user.save
       render json:@user, status: :created,  serializer: UserSerializer
     else
-      render json: @user.errors, status: :unprocessable_entity
+      render json: {error: "could not create"}, status: :unprocessable_entity
     end
   end
 
@@ -44,14 +45,26 @@ class Api::V1::UsersController < API::V1::BaseController
   end
 
 
-  def get_tone_of_day
-    @user = User.find(params[:id])
+  def get_tone_of_day(date, id)
+    @user = User.find(id)
     
     #date params must be dd/mm/yyyy
-    date = params[:date].to_date
     tone = @user.getTone(date)
     #byebug
-    render :json => {tone: tone}
+    tone
+  end
+
+  def get_month_tone
+    id = params[:id]
+
+    date_range = (Date.today.beginning_of_month...Date.today.end_of_month)
+    month_tone = []
+
+    date_range.each do |date|
+      month_tone.push(get_tone_of_day(date,id))
+    end
+
+    render :json => month_tone
   end
 
   private

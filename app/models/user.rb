@@ -2,6 +2,9 @@ class User < ApplicationRecord
   has_many :notes
   has_secure_password
 
+  validates :phone_number, numericality: true
+  validates :username, uniqueness: true
+
 
   def getTone(day)
     tone = []

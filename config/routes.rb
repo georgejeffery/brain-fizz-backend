@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       resources :tags
       post 'authenticate', to: 'authentication#create'
       get 'usernotes', to: 'notes#get_user_notes'
-      get 'daytone', to: 'users#get_tone_of_day'
+      get 'monthtone', to: 'users#get_month_tone'
     end
   end
 end
